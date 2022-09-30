@@ -3,11 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-  /* body {
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-  } */
+  html {
+    scroll-behavior: smooth;
+  }
 
   body {
     padding: 0;
@@ -22,6 +20,6 @@
   }
 
   .stick-top-navbar .navbar-logo {
-    @apply h-auto w-[min(100%,9vw)];
+    @apply w-[max(7vw,80px)];
   }
 }

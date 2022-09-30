@@ -12,30 +12,48 @@
   <body>
     <main class="relative w-full h-[100vh]">
       <header
-        class="navbar fixed z-20 w-full h-[25vh] pointer-events-none bg-pink-600 transition-all duration-300"
+        class="navbar fixed z-20 w-full h-[25vh] transition-all duration-300"
       >
         <span class="w-full h-full flex justify-center items-center">
           <div class="w-[50%] h-full flex items-center">
             <img
               src="./assets/MIDORI-LOGO.png"
-              class="navbar-logo h-auto w-[min(100%,12vw)] py-[30px] transition-all duration-300"
+              class="navbar-logo h-auto w-[max(10vw,100px)] transition-all duration-300"
             />
           </div>
-          <div class="w-[50%] h-full flex justify-center">
-            <span class="">Home</span>
-            <span class="">Gallery</span>
-            <span class="">About Us</span>
+          <div class="w-[50%] h-full flex justify-end items-center">
+            <div
+              class="flex w-[80%] h-full justify-evenly items-center pb-[5vh]"
+            >
+              <span class="font-mono font-thin text-[18px] tracking-widest"
+                ><a href="#home">Home</a></span
+              >
+              <span class="font-mono font-thin text-[18px] tracking-widest"
+                ><a href="#gallery">Gallery</a></span
+              >
+              <span class="font-mono font-thin text-[18px] tracking-widest"
+                ><a href="#about">About Us</a></span
+              >
+            </div>
           </div>
         </span>
       </header>
       <section class="slide-wrapper absolute z-10 w-full h-[100vh]">
         <div
-          id="#home"
-          class="slide w-full h-[100vh] bg-slate-600 flex justify-center items-center"
-        ></div>
+          id="home"
+          class="slide w-full h-[100vh] flex justify-center items-center"
+        >
+          <div class="relative w-full h-full overflow-hidden">
+            <div
+              class="absolute top-[50%] left-[50%] w-[2000px] h-auto translate-x-[-50%] translate-y-[-20%]"
+            >
+              <img src="assets/woman-white-outfit.jpg" class="w-[2000px]" />
+            </div>
+          </div>
+        </div>
 
         <div
-          id="#gallery"
+          id="gallery"
           class="slide w-full h-[100vh] bg-slate-500 flex justify-center items-center"
         >
           <h1 class="delay-75 duration-300 opacity-0 fill-mode-forwards">
@@ -46,13 +64,13 @@
           </h1>
         </div>
         <div
-          id="#about"
+          id="about"
           class="slide w-full h-[100vh] bg-slate-400 flex justify-center items-center"
         >
           <h1 class="delay-75 duration-300">Third Section</h1>
         </div>
         <div
-          id="#footer"
+          id="footer"
           class="slide w-full h-[30vh] bg-slate-300 flex justify-center items-center"
         >
           <h1 class="delay-75 duration-300">Fourth Section</h1>

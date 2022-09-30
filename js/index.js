@@ -27,10 +27,10 @@ const IOcallback = (entries, observer) => {
 entries.forEach(entry => {
     if (entry.isIntersecting) {
 
-        for (let child of entry.target.children) {
+        // for (let child of entry.target.children) {
 
-            child.classList.add("animate-left-fade-in")
-        }
+        //     child.classList.add("animate-left-fade-in")
+        // }
         console.log(entry)
     }
 });
