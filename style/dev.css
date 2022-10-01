@@ -15,11 +15,45 @@
 }
 
 @layer utilities {
-  .stick-top-navbar {
-    @apply h-[15vh];
+  .navbar-wrapper::before {
+    transition-duration: 0.3s;
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8743872549019608) 0%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.40379901960784315) 100%
+    );
   }
 
-  .stick-top-navbar .navbar-logo {
-    @apply w-[max(7vw,80px)];
+  .navbar {
+    height: 150px;
+  }
+
+  .navbar-title {
+    opacity: 0;
+  }
+
+  .scrolled .navbar-wrapper::before {
+    opacity: 0;
+  }
+
+  .scrolled .navbar-logo {
+    opacity: 0;
+  }
+
+  .scrolled .navbar-title {
+    opacity: 1;
+  }
+
+  .scrolled .navbar {
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
   }
 }

@@ -4,6 +4,8 @@ module.exports = {
   content: ["./js/*.{html,js}","*.{html,js}"],
   theme: {
     extend: {
+
+
       keyframes: {
         "left-fade-in": {
           "0%": {

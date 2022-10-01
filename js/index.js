@@ -7,9 +7,9 @@ let sections = document.querySelectorAll(".slide")
 
 
 window.addEventListener("scroll", ()=> {
-    let navbar = document.querySelector(".navbar")
+    let navbar = document.querySelector(".handler")
 
-    navbar.classList.toggle("stick-top-navbar", window.scrollY > 0)
+    navbar.classList.toggle("scrolled", window.scrollY > 0)
     
 })
 

@@ -10,31 +10,46 @@
     <link rel="stylesheet" href="./style/styles.css" />
   </head>
   <body>
-    <main class="relative w-full h-[100vh]">
-      <header
-        class="navbar fixed z-20 w-full h-[25vh] transition-all duration-300"
-      >
-        <span class="w-full h-full flex justify-center items-center">
-          <div class="w-[50%] h-full flex items-center">
-            <img
-              src="./assets/MIDORI-LOGO.png"
-              class="navbar-logo h-auto w-[max(10vw,100px)] transition-all duration-300"
-            />
+    <main class="handler relative w-full h-[100vh]">
+      <header class="navbar-wrapper fixed z-20 w-full h-full">
+        <img
+          src="./assets/MIDORI-LOGO.png"
+          class="navbar-logo h-auto absolute w-[max(12vw,200px)] transition-all duration-300"
+        />
+        <span
+          class="navbar absolute z-20 w-full flex justify-between transition-all duration-300"
+        >
+          <div class="w-auto h-full flex items-center">
+            <span class="navbar-title px-7 transition-all duration-300">
+              <a
+                href="#home"
+                class="font-mono font-thin text-slate-100 text-[18px] tracking-[0.5rem]"
+                >MIDORI</a
+              >
+            </span>
           </div>
-          <div class="w-[50%] h-full flex justify-end items-center">
-            <div
-              class="flex w-[80%] h-full justify-evenly items-center pb-[5vh]"
+          <div class="w-[25%] h-full flex justify-evenly items-center">
+            <span
+              ><a
+                href="#home"
+                class="font-mono font-thin text-slate-100 text-[18px] tracking-widest"
+                >Home</a
+              ></span
             >
-              <span class="font-mono font-thin text-[18px] tracking-widest"
-                ><a href="#home">Home</a></span
-              >
-              <span class="font-mono font-thin text-[18px] tracking-widest"
-                ><a href="#gallery">Gallery</a></span
-              >
-              <span class="font-mono font-thin text-[18px] tracking-widest"
-                ><a href="#about">About Us</a></span
-              >
-            </div>
+            <span
+              ><a
+                href="#gallery"
+                class="font-mono font-thin text-slate-100 text-[18px] tracking-widest"
+                >Gallery</a
+              ></span
+            >
+            <span
+              ><a
+                href="#about"
+                class="font-mono font-thin text-slate-100 text-[18px] tracking-widest"
+                >About Us</a
+              ></span
+            >
           </div>
         </span>
       </header>
@@ -45,9 +60,9 @@
         >
           <div class="relative w-full h-full overflow-hidden">
             <div
-              class="absolute top-[50%] left-[50%] w-[2000px] h-auto translate-x-[-50%] translate-y-[-20%]"
+              class="absolute top-[50%] left-[50%] w-[2000px] h-auto translate-x-[-50%] translate-y-[-50%]"
             >
-              <img src="assets/woman-white-outfit.jpg" class="w-[2000px]" />
+              <img src="assets/carousel-1.jpg" class="w-[2000px]" />
             </div>
           </div>
         </div>
