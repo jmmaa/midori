@@ -10,14 +10,17 @@
     <link rel="stylesheet" href="./style/styles.css" />
   </head>
   <body>
-    <main class="handler relative w-full h-[100vh]">
-      <header class="navbar-wrapper fixed z-20 w-full h-full">
+    <main
+      class="handler relative w-full h-[100vh] overflow-y-scroll scroll-smooth"
+    >
+      <header class="pointer-events-none sticky top-0 z-20 w-full">
         <img
           src="./assets/MIDORI-LOGO.png"
           class="navbar-logo h-auto absolute w-[max(12vw,200px)] transition-all duration-300"
         />
+
         <span
-          class="navbar absolute z-20 w-full flex justify-between transition-all duration-300"
+          class="navbar pointer-events-auto absolute z-20 w-full flex justify-between transition-all duration-300"
         >
           <div class="w-auto h-full flex items-center">
             <span class="navbar-title px-7 transition-all duration-300">
@@ -32,63 +35,206 @@
             <span
               ><a
                 href="#home"
-                class="font-mono font-thin text-slate-100 text-[18px] tracking-widest"
+                class="font-mono font-thin text-slate-100 text-[18px] tracking-widest flex flex-col after:transition-all after:duration-300 after:bg-slate-100 after:content-[''] after:h-[2px] after:w-0 hover:after:w-full"
                 >Home</a
               ></span
             >
             <span
               ><a
                 href="#gallery"
-                class="font-mono font-thin text-slate-100 text-[18px] tracking-widest"
+                class="font-mono font-thin text-slate-100 text-[18px] tracking-widest flex flex-col after:transition-all after:duration-300 after:bg-slate-100 after:content-[''] after:h-[2px] after:w-0 hover:after:w-full"
                 >Gallery</a
               ></span
             >
             <span
               ><a
                 href="#about"
-                class="font-mono font-thin text-slate-100 text-[18px] tracking-widest"
+                class="font-mono font-thin text-slate-100 text-[18px] tracking-widest flex flex-col after:transition-all after:duration-300 after:bg-slate-100 after:content-[''] after:h-[2px] after:w-0 hover:after:w-full"
                 >About Us</a
               ></span
             >
           </div>
         </span>
       </header>
-      <section class="slide-wrapper absolute z-10 w-full h-[100vh]">
+      <section class="relative z-10 w-full h-[100vh]">
         <div
           id="home"
-          class="slide w-full h-[100vh] flex justify-center items-center"
+          class="IO-slide w-full h-full flex justify-center items-center"
         >
-          <div class="relative w-full h-full overflow-hidden">
-            <div
-              class="absolute top-[50%] left-[50%] w-[2000px] h-auto translate-x-[-50%] translate-y-[-50%]"
-            >
-              <img src="assets/carousel-1.jpg" class="w-[2000px]" />
+          <div
+            class="carousel w-full h-full overflow-x-scroll grid grid-flow-col auto-cols-[100%] before:z-20 before:content-[''] before:absolute before:w-full before:h-full"
+          >
+            <div id="slide-1" class="relative w-full h-full overflow-hidden">
+              <div
+                class="absolute top-[50%] left-[50%] w-[2000px] h-auto translate-x-[-50%] translate-y-[-50%]"
+              >
+                <img src="assets/ena.jpg" class="w-[2000px]" />
+              </div>
+            </div>
+            <div id="slide-2" class="relative w-full h-full overflow-hidden">
+              <div
+                class="absolute top-[50%] left-[50%] w-[2000px] h-auto translate-x-[-50%] translate-y-[-50%]"
+              >
+                <img src="assets/mafuyu.png" class="w-[2000px]" />
+              </div>
+            </div>
+            <div id="slide-3" class="relative w-full h-full overflow-hidden">
+              <div
+                class="absolute top-[50%] left-[50%] w-[2000px] h-auto translate-x-[-50%] translate-y-[-50%]"
+              >
+                <img src="assets/mizuki.png" class="w-[2000px]" />
+              </div>
             </div>
           </div>
         </div>
-
+      </section>
+      <section class="w-full h-auto gallery bg-slate-100">
         <div
           id="gallery"
-          class="slide w-full h-[100vh] bg-slate-500 flex justify-center items-center"
+          class="IO-slide w-full h-full py-20 px-10 flex justify-center items-center"
         >
-          <h1 class="delay-75 duration-300 opacity-0 fill-mode-forwards">
-            Second Section
-          </h1>
-          <h1 class="delay-75 duration-300 opacity-0 fill-mode-forwards">
-            Second Section
-          </h1>
-        </div>
-        <div
-          id="about"
-          class="slide w-full h-[100vh] bg-slate-400 flex justify-center items-center"
-        >
-          <h1 class="delay-75 duration-300">Third Section</h1>
-        </div>
-        <div
-          id="footer"
-          class="slide w-full h-[30vh] bg-slate-300 flex justify-center items-center"
-        >
-          <h1 class="delay-75 duration-300">Fourth Section</h1>
+          <div class="w-[90%] h-[80%] flex flex-col gap-52">
+            <div class="w-full h-auto flex flex-col gap-12">
+              <span class="flex flex-col gap-1"
+                ><p
+                  class="gallery-title opacity-0 font-mono font-thin text-slate-800 text-3xl tracking-widest"
+                >
+                  Roppongi Collection
+                </p>
+                <p
+                  class="gallery-title opacity-0 font-mono font-thin text-slate-800 text-lg tracking-widest"
+                >
+                  japanese characters here
+                </p>
+              </span>
+              <div class="flex justify-center">
+                <span class="flex justify-center w-[90%] h-[30rem]">
+                  <span
+                    class="gallery-card-container flex gap-[5%] w-full h-full justify-center"
+                  >
+                    <div
+                      class="gallery-card-1 opacity-0 bg-slate-800 w-full h-full relative overflow-hidden rounded-lg drop-shadow-lg"
+                    >
+                      <span
+                        class="absolute top-[50%] left-[50%] w-[1000px] group h-auto translate-x-[-50%] translate-y-[-50%]"
+                      >
+                        <img
+                          src="assets/ena.jpg"
+                          class="group-hover:scale-110 transition-all duration-300"
+                        />
+                      </span>
+                    </div>
+                    <div
+                      class="gallery-card-2 opacity-0 bg-slate-800 w-full h-full relative overflow-hidden rounded-lg drop-shadow-lg"
+                    >
+                      <span
+                        class="absolute top-[50%] left-[50%] w-[1000px] group h-auto translate-x-[-50%] translate-y-[-50%]"
+                      >
+                        <img
+                          src="assets/ena.jpg"
+                          class="group-hover:scale-110 transition-all duration-300"
+                        />
+                      </span>
+                    </div>
+                    <div
+                      class="gallery-card-3 opacity-0 bg-slate-800 w-full h-full relative overflow-hidden rounded-lg drop-shadow-lg"
+                    >
+                      <span
+                        class="absolute top-[50%] left-[50%] w-[1000px] group h-auto translate-x-[-50%] translate-y-[-50%]"
+                      >
+                        <img
+                          src="assets/ena.jpg"
+                          class="group-hover:scale-110 transition-all duration-300"
+                        />
+                      </span>
+                    </div>
+                    <div
+                      class="gallery-card-4 opacity-0 bg-slate-800 w-full h-full relative overflow-hidden rounded-lg drop-shadow-lg"
+                    >
+                      <span
+                        class="absolute top-[50%] left-[50%] w-[1000px] group h-auto translate-x-[-50%] translate-y-[-50%]"
+                      >
+                        <img
+                          src="assets/ena.jpg"
+                          class="group-hover:scale-110 transition-all duration-300"
+                        />
+                      </span>
+                    </div>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="w-full h-auto flex flex-col gap-5">
+              <span class="flex flex-col gap-1"
+                ><p
+                  class="gallery-title opacity-0 font-mono font-thin text-slate-800 text-3xl tracking-widest"
+                >
+                  Harajuku Collection
+                </p>
+                <p
+                  class="gallery-title opacity-0 font-mono font-thin text-slate-800 text-lg tracking-widest"
+                >
+                  japanese characters here
+                </p>
+              </span>
+              <div class="flex justify-center">
+                <span class="flex justify-center w-[90%] h-[30rem]">
+                  <span
+                    class="gallery-card-container flex gap-[5%] w-full h-full justify-center"
+                  >
+                    <div
+                      class="gallery-card-1 opacity-0 bg-slate-800 w-full h-full relative overflow-hidden rounded-lg drop-shadow-lg"
+                    >
+                      <span
+                        class="absolute top-[50%] left-[50%] w-[1000px] group h-auto translate-x-[-50%] translate-y-[-50%]"
+                      >
+                        <img
+                          src="assets/ena.jpg"
+                          class="group-hover:scale-110 transition-all duration-300"
+                        />
+                      </span>
+                    </div>
+                    <div
+                      class="gallery-card-2 opacity-0 bg-slate-800 w-full h-full relative overflow-hidden rounded-lg drop-shadow-lg"
+                    >
+                      <span
+                        class="absolute top-[50%] left-[50%] w-[1000px] group h-auto translate-x-[-50%] translate-y-[-50%]"
+                      >
+                        <img
+                          src="assets/ena.jpg"
+                          class="group-hover:scale-110 transition-all duration-300"
+                        />
+                      </span>
+                    </div>
+                    <div
+                      class="gallery-card-3 opacity-0 bg-slate-800 w-full h-full relative overflow-hidden rounded-lg drop-shadow-lg"
+                    >
+                      <span
+                        class="absolute top-[50%] left-[50%] w-[1000px] group h-auto translate-x-[-50%] translate-y-[-50%]"
+                      >
+                        <img
+                          src="assets/ena.jpg"
+                          class="group-hover:scale-110 transition-all duration-300"
+                        />
+                      </span>
+                    </div>
+                    <div
+                      class="gallery-card-4 opacity-0 bg-slate-800 w-full h-full relative overflow-hidden rounded-lg drop-shadow-lg"
+                    >
+                      <span
+                        class="absolute top-[50%] left-[50%] w-[1000px] group h-auto translate-x-[-50%] translate-y-[-50%]"
+                      >
+                        <img
+                          src="assets/ena.jpg"
+                          class="group-hover:scale-110 transition-all duration-300"
+                        />
+                      </span>
+                    </div>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
