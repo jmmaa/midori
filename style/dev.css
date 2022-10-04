@@ -75,19 +75,25 @@
     @apply animate-[left-fade-in_0.5s_ease-in-out_both];
   }
 
-  .gallery-card-container.intersect .gallery-card-1 {
+  .gallery-card-container.intersect .gallery-card:nth-child(1) {
     @apply animate-[left-fade-in_0.5s_ease-in-out_both_300ms];
   }
 
-  .gallery-card-container.intersect .gallery-card-2 {
+  .gallery-card-container.intersect .gallery-card:nth-child(2) {
     @apply animate-[left-fade-in_0.5s_ease-in-out_both_400ms];
   }
 
-  .gallery-card-container.intersect .gallery-card-3 {
+  .gallery-card-container.intersect .gallery-card:nth-child(3) {
     @apply animate-[left-fade-in_0.5s_ease-in-out_both_500ms];
   }
 
-  .gallery-card-container.intersect .gallery-card-4 {
+  .gallery-card-container.intersect .gallery-card:nth-child(4) {
     @apply animate-[left-fade-in_0.5s_ease-in-out_both_600ms];
+  }
+
+  .card-shadow {
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
   }
 }

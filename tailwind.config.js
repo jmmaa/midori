@@ -15,7 +15,6 @@ module.exports = {
           },
           "100%": {
             transform: "translateX(0)",
-            filter: "none",
             opacity: 1
           }
         },
