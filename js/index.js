@@ -1,7 +1,7 @@
 // el
 
 let galleryTitles = document.getElementsByClassName("gallery-title")
-// let galleryCard = document.getElementsByClassName("gallery-card")
+let productCardContainer = document.querySelector(".product-card-container")
 let galleryCardContainers = document.getElementsByClassName("gallery-card-container")
 
 let handler = document.querySelector(".handler")
@@ -23,16 +23,21 @@ entries.forEach(entry => {
 });
 };
 
-const galleryObserver = new IntersectionObserver(IOcallback, {root: handler, threshold: 0.7});
+const observer = new IntersectionObserver(IOcallback, {root: handler, threshold: 0.2});
 
 
 for (let el of galleryTitles) {
-    galleryObserver.observe(el)
+    observer.observe(el)
 }
 
 for (let el of galleryCardContainers) {
-    galleryObserver.observe(el)
+    observer.observe(el)
 }
+
+
+observer.observe(productCardContainer)
+
+
 
 
 
@@ -75,4 +80,4 @@ setInterval(() => {
         index = 0
     }
 
-}, 5000)
+}, 10000)
