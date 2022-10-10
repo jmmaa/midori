@@ -1,21 +1,14 @@
 // el
 
-let galleryTitles = document.getElementsByClassName("gallery-title")
-let productCardContainer = document.querySelector(".product-card-container")
-let galleryCardContainers = document.getElementsByClassName("gallery-card-container")
-
+let items = document.querySelectorAll(".gallery-card, .gallery-title, .product-card") // get all elements to be "observed" 
 let handler = document.querySelector(".handler")
 
 
 
-
-
-
-const IOcallback = (entries, observer) => {
+const IOcallback = (entries, observer) => { // this is the callback function for the intersection observer, this adds "intersect" classname to the element when it is ready in the page
 
 entries.forEach(entry => {
     if (entry.isIntersecting) {
-        console.log(entry.target)
 
         entry.target.classList.add("intersect")
     }
@@ -23,61 +16,19 @@ entries.forEach(entry => {
 });
 };
 
-const observer = new IntersectionObserver(IOcallback, {root: handler, threshold: 0.2});
+const observer = new IntersectionObserver(IOcallback, {root: handler, threshold: 0.5}); 
 
-
-for (let el of galleryTitles) {
+for (let el of items) {
     observer.observe(el)
 }
-
-for (let el of galleryCardContainers) {
-    observer.observe(el)
-}
-
-
-observer.observe(productCardContainer)
-
-
-
 
 
 // navbar
 
-handler.addEventListener("scroll", (e)=> {
+
+handler.addEventListener("scroll", (e)=> { 
+
+    // toggles a "scrolled" css classname to the navbar to change its style when the page is scrolled down
     e.target.classList.toggle("scrolled", e.target.scrollTop > 0)
     
 })
-
-
-
-// carousel
-
-let slide1 = document.getElementById("slide-1")
-let slide2 = document.getElementById("slide-2")
-let slide3 = document.getElementById("slide-3")
-
-let slides = [slide1, slide2, slide3]
-
-let index = 0
-
-setInterval(() => {
-    
-    if (index < slides.length ) {
-        // console.log(index)
-
-        const currSlide = slides[index]
-
-        currSlide.parentNode.scroll(
-            {
-                left: currSlide.offsetLeft,
-                behavior: "smooth"
-            }
-        )
-
-        index += 1
-
-    } else {
-        index = 0
-    }
-
-}, 10000)

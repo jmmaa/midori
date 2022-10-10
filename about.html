@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style/styles.css" />
+  </head>
+  <body>
+    <main
+      class="handler relative w-full h-[100vh] overflow-y-scroll scroll-smooth"
+    >
+      <img
+        src="./assets/midori-logo-white.png"
+        class="navbar-logo absolute z-30 top-5 left-3 w-[max(12vw,200px)] transition-all duration-300"
+        alt="midori-logo-white"
+      />
+      <header class="pointer-events-none sticky top-0 z-20 w-full">
+        <span
+          class="navbar pointer-events-auto absolute z-20 w-full flex justify-between transition-all duration-300 py-9"
+        >
+          <div class="w-auto h-full flex items-center">
+            <span class="navbar-title px-7 transition-all duration-300">
+              <a
+                href="index.html"
+                class="font-t-light text-white text-[18px] tracking-[0.5rem]"
+                >MIDORI</a
+              >
+            </span>
+          </div>
+          <div class="w-[40%] h-full flex justify-evenly items-center">
+            <span
+              ><a
+                href="index.html"
+                class="font-t-light text-white text-[18px] tracking-widest flex flex-col after:transition-all after:duration-300 after:bg-slate-100 after:content-[''] after:h-[2px] after:w-0 hover:after:w-full"
+                >Home</a
+              ></span
+            >
+            <span
+              ><a
+                href="gallery.html"
+                class="font-t-light text-white text-[18px] tracking-widest flex flex-col after:transition-all after:duration-300 after:bg-slate-100 after:content-[''] after:h-[2px] after:w-0 hover:after:w-full"
+                >Gallery</a
+              ></span
+            >
+            <span
+              ><a
+                href="about.html"
+                class="font-t-light text-white text-[18px] tracking-widest flex flex-col after:transition-all after:duration-300 after:bg-slate-100 after:content-[''] after:h-[2px] after:w-0 hover:after:w-full"
+                >About Us</a
+              ></span
+            >
+            <span
+              ><img src="assets/user.png" alt="search" class="invert w-10"
+            /></span>
+            <span
+              ><img src="assets/shop.png" alt="search" class="invert w-8"
+            /></span>
+            <span
+              ><img src="assets/search.png" alt="search" class="invert w-8"
+            /></span>
+          </div>
+        </span>
+      </header>
+      <div class="relative hero w-full h-full overflow-hidden">
+        <div
+          class="absolute top-[50%] left-[50%] w-[2000px] h-auto translate-x-[-50%] translate-y-[-50%]"
+        >
+          <img
+            src="assets/about_hero_img.jpg"
+            class="w-[2000px]"
+            alt="about-hero-img"
+          />
+        </div>
+      </div>
+      <section id="about" class="flex justify-center w-full h-auto gallery">
+        <div class="w-[50%] flex flex-col items-center gap-10 py-10">
+          <div class="flex flex-col items-center gap-10 py-20">
+            <h1 class="pb-10 font-t-regular font-bold text-2xl">About Us</h1>
+            <p class="font-t-semibold text-black text-lg text-center">
+              MIDORI began as an experimental fashion line catalog-innovative
+              pop art-inspired designs capturing a distinct Tokyo aesthetic. The
+              iconic trademarked motif in particular received media coverage
+              around the world. With apparel created as a canvas to complete the
+              story. MIDORI evolved into designing unisex collections
+            </p>
+            <p class="font-t-semibold text-black text-lg text-center">
+              Jay Yuu Nanasawa is Japanese-Filipino Graphic designer and
+              professional Photographer, same as Lancelot Paclibar who is also a
+              Filipino Fashion designer and Animator. They studied graphic
+              design at Mapua Malayan Colleges Mindanao and graduated in 2023.
+              They are well-known as the creative directors of their brand
+              MIDORI and known for their forte in Davao City. Jay and Lancelot
+              are currently based in Tokyo, Japan.
+            </p>
+          </div>
+          <div class="flex flex-col items-center gap-10">
+            <h1 class="pb-10 font-t-regular font-bold text-black text-2xl">
+              Founders
+            </h1>
+            <span class="flex gap-28"
+              ><div class="flex justify-center flex-col items-center gap-5">
+                <div
+                  class="bg-slate-800 w-72 h-72 relative overflow-hidden rounded-[50%]"
+                >
+                  <span
+                    class="absolute top-[50%] left-[50%] w-[400px] h-auto translate-x-[-50%] translate-y-[-26%]"
+                  >
+                    <img src="assets/yuyu.jpg" class="w-[400px]" />
+                  </span>
+                </div>
+                <p class="font-t-light text-slate-800 text-md">
+                  Jay Yuu Nanasawa
+                </p>
+              </div>
+              <div class="flex justify-center flex-col items-center gap-5">
+                <div
+                  class="bg-slate-800 w-72 h-72 relative overflow-hidden rounded-[50%]"
+                >
+                  <span
+                    class="absolute top-[50%] left-[50%] w-[300px] h-auto translate-x-[-50%] translate-y-[-50%]"
+                  >
+                    <img src="assets/lanzy.jpg" class="w-[300px]" />
+                  </span>
+                </div>
+                <p class="font-t-light text-slate-800 text-md">
+                  Lancelot Paclibar
+                </p>
+              </div>
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="flex justify-center p-20">
+        <span class="flex flex-col items-center">
+          <p class="font-t-semibold font-bold">FROM JAPAN TO THE WORLD</p>
+          <p class="font-z-regular text-lg">日本から世界に</p>
+        </span>
+      </section>
+      <footer class="bg-[#f0f0f0] flex justify-center items-center">
+        <p class="font-t-semibold text-md p-10">MIDORI 2022</p>
+      </footer>
+    </main>
+
+    <script src="./js/index.js" async defer></script>
+  </body>
+</html>

@@ -5,23 +5,14 @@ module.exports = {
   theme: {
     extend: {
 
-
-      keyframes: {
-        "left-fade-in": {
-          "0%": {
-            transform: "translateX(-50px)",
-            filter: "blur(5px)",
-            opacity: 0,
-          },
-          "100%": {
-            transform: "translateX(0)",
-            opacity: 1
-          }
-        },
-      },
-
-      animation: {
-        "left-fade-in": "left-fade-in",
+      fontFamily: {
+        "t-black": "titillium-black",
+        "t-semibold": "titillium-semibold",
+        "t-light": "titillium-light",
+        "t-regular": "titillium-regular",
+        "z-bold": "zen-bold",
+        "z-black": "zen-black",
+        "z-regular": "zen-regular"
       }
     },
   },

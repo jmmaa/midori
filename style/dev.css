@@ -3,6 +3,41 @@
 @tailwind utilities;
 
 @layer base {
+  @font-face {
+    font-family: titillium-semibold;
+    src: url(/assets/fonts/TitilliumWeb-SemiBold.ttf);
+  }
+
+  @font-face {
+    font-family: titillium-black;
+    src: url(/assets/fonts/TitilliumWeb-Black.ttf);
+  }
+
+  @font-face {
+    font-family: titillium-light;
+    src: url(/assets/fonts/TitilliumWeb-Light.ttf);
+  }
+
+  @font-face {
+    font-family: titillium-regular;
+    src: url(/assets/fonts/TitilliumWeb-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: zen-bold;
+    src: url(/assets/fonts/ZenOldMincho-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: zen-black;
+    src: url(/assets/fonts/ZenOldMincho-Black.ttf);
+  }
+
+  @font-face {
+    font-family: zen-regular;
+    src: url(/assets/fonts/ZenOldMincho-Regular.ttf);
+  }
+
   html,
   body {
     width: 100%;
@@ -14,34 +49,19 @@
 }
 
 @layer utilities {
-  .carousel::-webkit-scrollbar {
-    display: none;
-  }
-
-  .carousel::before {
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0.8) 15%,
-      rgba(0, 0, 0, 0.1) 90%,
-      rgba(0, 0, 0, 0) 100%
-    );
-  }
-
-  .navbar-wrapper::before {
-    transition-duration: 0.3s;
-
+  .hero::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     opacity: 1;
+    z-index: 10;
 
     background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 15%,
-      rgba(0, 0, 0, 0) 90%,
+      rgba(0, 0, 0, 0.6) 15%,
+      rgba(0, 0, 0, 0.2) 90%,
       rgba(0, 0, 0, 0.1) 100%
     );
   }
@@ -71,48 +91,57 @@
     background-color: rgba(0, 0, 0, 1);
   }
 
+  .gallery-card,
+  .gallery-title,
+  .product-card {
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transform: translateX(-50px);
+
+    opacity: 0;
+    filter: blur(5px);
+  }
+
   .gallery-title.intersect {
-    @apply animate-[left-fade-in_0.5s_ease-in-out_both];
+    transition-delay: 0.3s;
+    transform: translateX(0);
+    opacity: 1;
+    filter: none;
   }
 
-  .gallery-card-container.intersect .gallery-card:nth-child(1) {
-    @apply animate-[left-fade-in_0.5s_ease-in-out_both_300ms];
+  .gallery-card.intersect,
+  .product-card.intersect {
+    opacity: 1;
+    filter: none;
+    transform: translateX(0);
   }
 
-  .gallery-card-container.intersect .gallery-card:nth-child(2) {
-    @apply animate-[left-fade-in_0.5s_ease-in-out_both_400ms];
+  .gallery-card.intersect:nth-child(1) {
+    transition-delay: 0.3s;
+  }
+  .gallery-card.intersect:nth-child(2) {
+    transition-delay: 0.4s;
+  }
+  .gallery-card.intersect:nth-child(3) {
+    transition-delay: 0.5s;
+  }
+  .gallery-card.intersect:nth-child(4) {
+    transition-delay: 0.6s;
   }
 
-  .gallery-card-container.intersect .gallery-card:nth-child(3) {
-    @apply animate-[left-fade-in_0.5s_ease-in-out_both_500ms];
+  .product-card.intersect:nth-child(1),
+  .product-card.intersect:nth-child(4) {
+    transition-delay: 0.3s;
   }
 
-  .gallery-card-container.intersect .gallery-card:nth-child(4) {
-    @apply animate-[left-fade-in_0.5s_ease-in-out_both_600ms];
+  .product-card.intersect:nth-child(2),
+  .product-card.intersect:nth-child(5) {
+    transition-delay: 0.4s;
   }
-
-  .product-card-container.intersect .product-card:nth-child(1) {
-    @apply animate-[left-fade-in_0.5s_ease-in-out_both_300ms];
-  }
-
-  .product-card-container.intersect .product-card:nth-child(2) {
-    @apply animate-[left-fade-in_0.5s_ease-in-out_both_400ms];
-  }
-
-  .product-card-container.intersect .product-card:nth-child(3) {
-    @apply animate-[left-fade-in_0.5s_ease-in-out_both_500ms];
-  }
-
-  .product-card-container.intersect .product-card:nth-child(4) {
-    @apply animate-[left-fade-in_0.5s_ease-in-out_both_600ms];
-  }
-
-  .product-card-container.intersect .product-card:nth-child(5) {
-    @apply animate-[left-fade-in_0.5s_ease-in-out_both_700ms];
-  }
-
-  .product-card-container.intersect .product-card:nth-child(6) {
-    @apply animate-[left-fade-in_0.5s_ease-in-out_both_800ms];
+  .product-card.intersect:nth-child(3),
+  .product-card.intersect:nth-child(6) {
+    transition-delay: 0.5s;
   }
 
   .card-shadow {

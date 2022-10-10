@@ -13,98 +13,81 @@
     <main
       class="handler relative w-full h-[100vh] overflow-y-scroll scroll-smooth"
     >
-      <header class="pointer-events-none sticky top-0 z-20 w-full">
-        <img
-          src="./assets/MIDORI-LOGO.png"
-          class="navbar-logo h-auto absolute w-[max(12vw,200px)] transition-all duration-300"
-        />
+      <img
+        src="./assets/midori-logo-white.png"
+        class="navbar-logo absolute z-30 top-5 left-3 w-[max(12vw,200px)] transition-all duration-300"
+      />
 
+      <header class="pointer-events-none sticky top-0 z-20 w-full">
         <span
-          class="navbar pointer-events-auto absolute z-20 w-full flex justify-between transition-all duration-300"
+          class="navbar pointer-events-auto absolute z-20 w-full flex justify-between transition-all duration-300 py-9"
         >
           <div class="w-auto h-full flex items-center">
             <span class="navbar-title px-7 transition-all duration-300">
               <a
-                href="#home"
-                class="font-mono font-thin text-slate-100 text-[18px] tracking-[0.5rem]"
+                href="index.html"
+                class="font-t-light text-white text-[18px] tracking-[0.5rem]"
                 >MIDORI</a
               >
             </span>
           </div>
-          <div class="w-[30%] h-full flex justify-evenly items-center">
+          <div class="w-[40%] h-full flex justify-evenly items-center">
             <span
               ><a
-                href="#home"
-                class="font-mono font-thin text-slate-100 text-[18px] tracking-widest flex flex-col after:transition-all after:duration-300 after:bg-slate-100 after:content-[''] after:h-[2px] after:w-0 hover:after:w-full"
+                href="index.html"
+                class="font-t-light text-white text-[18px] tracking-widest flex flex-col after:transition-all after:duration-300 after:bg-slate-100 after:content-[''] after:h-[2px] after:w-0 hover:after:w-full"
                 >Home</a
               ></span
             >
             <span
               ><a
-                href="#gallery"
-                class="font-mono font-thin text-slate-100 text-[18px] tracking-widest flex flex-col after:transition-all after:duration-300 after:bg-slate-100 after:content-[''] after:h-[2px] after:w-0 hover:after:w-full"
+                href="gallery.html"
+                class="font-t-light text-white text-[18px] tracking-widest flex flex-col after:transition-all after:duration-300 after:bg-slate-100 after:content-[''] after:h-[2px] after:w-0 hover:after:w-full"
                 >Gallery</a
               ></span
             >
             <span
               ><a
-                href="#about"
-                class="font-mono font-thin text-slate-100 text-[18px] tracking-widest flex flex-col after:transition-all after:duration-300 after:bg-slate-100 after:content-[''] after:h-[2px] after:w-0 hover:after:w-full"
+                href="about.html"
+                class="font-t-light text-white text-[18px] tracking-widest flex flex-col after:transition-all after:duration-300 after:bg-slate-100 after:content-[''] after:h-[2px] after:w-0 hover:after:w-full"
                 >About Us</a
               ></span
             >
+            <span
+              ><img src="assets/user.png" alt="search" class="invert w-10"
+            /></span>
+            <span
+              ><img src="assets/shop.png" alt="search" class="invert w-8"
+            /></span>
+            <span
+              ><img src="assets/search.png" alt="search" class="invert w-8"
+            /></span>
           </div>
         </span>
       </header>
-      <section class="relative z-10 w-full h-[100vh]">
+      <div class="hero relative w-full h-full overflow-hidden">
         <div
-          id="hero"
-          class="IO-slide w-full h-full flex justify-center items-center"
+          class="absolute top-[50%] left-[50%] w-[2000px] h-auto translate-x-[-50%] translate-y-[-50%]"
         >
-          <div
-            class="carousel w-full h-full overflow-x-scroll grid grid-flow-col auto-cols-[100%] before:z-20 before:content-[''] before:absolute before:w-full before:h-full"
-          >
-            <div id="slide-1" class="relative w-full h-full overflow-hidden">
-              <div
-                class="absolute top-[50%] left-[50%] w-[2000px] h-auto translate-x-[-50%] translate-y-[-50%]"
-              >
-                <img src="assets/ena.jpg" class="w-[2000px]" />
-              </div>
-            </div>
-            <div id="slide-2" class="relative w-full h-full overflow-hidden">
-              <div
-                class="absolute top-[50%] left-[50%] w-[2000px] h-auto translate-x-[-50%] translate-y-[-50%]"
-              >
-                <img src="assets/mafuyu.png" class="w-[2000px]" />
-              </div>
-            </div>
-            <div id="slide-3" class="relative w-full h-full overflow-hidden">
-              <div
-                class="absolute top-[50%] left-[50%] w-[2000px] h-auto translate-x-[-50%] translate-y-[-50%]"
-              >
-                <img src="assets/mizuki.png" class="w-[2000px]" />
-              </div>
-            </div>
-          </div>
+          <img src="assets/index_hero_img.jpg" class="w-[2000px]" />
         </div>
-      </section>
-
+      </div>
       <section
         id="home"
-        class="product-section w-full h-auto flex justify-center bg-slate-100"
+        class="product-section w-full h-auto flex justify-center"
       >
         <div class="w-[90%] h-auto flex justify-center items-center py-20">
           <div class="flex justify-center items-center flex-col gap-12">
             <span>
               <p
-                class="font-mono font-[1000] text-slate-800 text-2xl tracking-widest"
+                class="font-t-light font-[1000] text-slate-800 text-2xl tracking-widest"
               >
                 All Products
               </p>
             </span>
             <span class="product-card-container grid grid-cols-3 gap-20"
               ><div
-                class="product-card opacity-0 w-72 h-[27rem] flex flex-col items-center gap-5 group"
+                class="product-card w-72 h-[27rem] flex flex-col items-center gap-5 group"
               >
                 <div class="relative w-full h-full">
                   <img
@@ -114,29 +97,29 @@
                   />
                 </div>
                 <p
-                  class="font-mono text-md font-thin text-slate-800 tracking-widest flex flex-col after:w-0 after:content-[''] after:h-[2px] group-hover:after:w-full after:bg-slate-800 after:transition-all after:duration-300"
+                  class="font-t-light text-md font-thin text-slate-800 tracking-widest flex flex-col items-center after:w-0 after:content-[''] after:h-[2px] group-hover:after:w-full after:bg-slate-800 after:transition-all after:duration-300"
                 >
                   Yoshi Long sleeve
                 </p>
               </div>
               <div
-                class="product-card opacity-0 w-72 h-[27rem] flex flex-col items-center gap-5 group"
+                class="product-card w-72 h-[27rem] flex flex-col items-center gap-5 group"
               >
                 <div class="relative w-full h-full">
                   <img
-                    src="assets/yoshi_hoodie.jpg"
+                    src="assets/yoshi_hoodie.png"
                     alt="item"
                     class="absolute group-hover:scale-110 transition-all duration-300"
                   />
                 </div>
                 <p
-                  class="font-mono text-md font-thin text-slate-800 tracking-widest flex flex-col after:w-0 after:content-[''] after:h-[2px] group-hover:after:w-full after:bg-slate-800 after:transition-all after:duration-300"
+                  class="font-t-light text-md font-thin text-slate-800 tracking-widest flex flex-col items-center after:w-0 after:content-[''] after:h-[2px] group-hover:after:w-full after:bg-slate-800 after:transition-all after:duration-300"
                 >
                   YoshiHoodie
                 </p>
               </div>
               <div
-                class="product-card opacity-0 w-72 h-[27rem] flex flex-col items-center gap-5 group"
+                class="product-card w-72 h-[27rem] flex flex-col items-center gap-5 group"
               >
                 <div class="relative w-full h-full">
                   <img
@@ -146,13 +129,13 @@
                   />
                 </div>
                 <p
-                  class="font-mono text-md font-thin text-slate-800 tracking-widest flex flex-col after:w-0 after:content-[''] after:h-[2px] group-hover:after:w-full after:bg-slate-800 after:transition-all after:duration-300"
+                  class="font-t-light text-md font-thin text-slate-800 tracking-widest flex flex-col items-center after:w-0 after:content-[''] after:h-[2px] group-hover:after:w-full after:bg-slate-800 after:transition-all after:duration-300"
                 >
                   Marry Long sleeve
                 </p>
               </div>
               <div
-                class="product-card opacity-0 w-72 h-[27rem] flex flex-col items-center gap-5 group"
+                class="product-card w-72 h-[27rem] flex flex-col items-center gap-5 group"
               >
                 <div class="relative w-full h-full">
                   <img
@@ -162,13 +145,13 @@
                   />
                 </div>
                 <p
-                  class="font-mono text-md font-thin text-slate-800 tracking-widest flex flex-col after:w-0 after:content-[''] after:h-[2px] group-hover:after:w-full after:bg-slate-800 after:transition-all after:duration-300"
+                  class="font-t-light text-md font-thin text-slate-800 tracking-widest flex flex-col items-center after:w-0 after:content-[''] after:h-[2px] group-hover:after:w-full after:bg-slate-800 after:transition-all after:duration-300"
                 >
                   Insomnia Jacket
                 </p>
               </div>
               <div
-                class="product-card opacity-0 w-72 h-[27rem] flex flex-col items-center gap-5 group"
+                class="product-card w-72 h-[27rem] flex flex-col items-center gap-5 group"
               >
                 <div class="relative w-full h-full">
                   <img
@@ -178,13 +161,13 @@
                   />
                 </div>
                 <p
-                  class="font-mono text-md font-thin text-slate-800 tracking-widest flex flex-col after:w-0 after:content-[''] after:h-[2px] group-hover:after:w-full after:bg-slate-800 after:transition-all after:duration-300"
+                  class="font-t-light text-md font-thin text-slate-800 tracking-widest flex flex-col items-center after:w-0 after:content-[''] after:h-[2px] group-hover:after:w-full after:bg-slate-800 after:transition-all after:duration-300"
                 >
                   Cropped combat jacket
                 </p>
               </div>
               <div
-                class="product-card opacity-0 w-72 h-[27rem] flex flex-col items-center gap-5 group"
+                class="product-card w-72 h-[27rem] flex flex-col items-center gap-5 group"
               >
                 <div class="relative w-full h-full">
                   <img
@@ -194,267 +177,23 @@
                   />
                 </div>
                 <p
-                  class="font-mono text-md font-thin text-slate-800 tracking-widest flex flex-col after:w-0 after:content-[''] after:h-[2px] group-hover:after:w-full after:bg-slate-800 after:transition-all after:duration-300"
+                  class="font-t-light text-md font-thin text-slate-800 tracking-widest flex flex-col items-center after:w-0 after:content-[''] after:h-[2px] group-hover:after:w-full after:bg-slate-800 after:transition-all after:duration-300"
                 >
                   "Lain" Weeper Hoodie
                 </p>
               </div>
             </span>
             <span class="p-5 bg-black rounded-lg">
-              <p
-                class="font-mono font-thin text-slate-100 text-lg tracking-widest"
-              >
+              <p class="font-t-light text-white text-lg tracking-widest">
                 Shop All Products
               </p>
             </span>
           </div>
         </div>
       </section>
-      <section class="w-full h-auto gallery bg-slate-100">
-        <div
-          id="gallery"
-          class="IO-slide w-full h-full py-20 px-10 flex justify-center items-center"
-        >
-          <div class="w-[90%] h-auto flex flex-col gap-10">
-            <div class="mb-10 w-full h-auto flex flex-col gap-12">
-              <div class="w-full h-auto flex flex-col gap-12">
-                <span class="flex flex-col gap-1"
-                  ><p
-                    class="gallery-title opacity-0 font-mono font-thin text-slate-800 text-3xl tracking-widest"
-                  >
-                    Harajuku Collection
-                  </p>
-                  <p
-                    class="gallery-title opacity-0 font-mono font-thin text-slate-800 text-lg tracking-widest"
-                  >
-                    japanese characters here
-                  </p>
-                </span>
-                <div class="flex justify-center">
-                  <span class="flex justify-center w-[90%] h-[30rem]">
-                    <span
-                      class="gallery-card-container flex gap-[5%] w-full h-full justify-center"
-                    >
-                      <div
-                        class="gallery-card opacity-0 bg-slate-800 w-full h-full relative overflow-hidden rounded-[1rem] card-shadow"
-                      >
-                        <span
-                          class="absolute top-[50%] left-[50%] w-[1000px] group h-auto translate-x-[-50%] translate-y-[-50%]"
-                        >
-                          <img
-                            src="assets/ena.jpg"
-                            class="group-hover:scale-110 transition-all duration-300"
-                          />
-                        </span>
-                      </div>
-                      <div
-                        class="gallery-card opacity-0 bg-slate-800 w-full h-full relative overflow-hidden rounded-[1rem] card-shadow"
-                      >
-                        <span
-                          class="absolute top-[50%] left-[50%] w-[1000px] group h-auto translate-x-[-50%] translate-y-[-50%]"
-                        >
-                          <img
-                            src="assets/ena.jpg"
-                            class="group-hover:scale-110 transition-all duration-300"
-                          />
-                        </span>
-                      </div>
-                      <div
-                        class="gallery-card opacity-0 bg-slate-800 w-full h-full relative overflow-hidden rounded-[1rem] card-shadow"
-                      >
-                        <span
-                          class="absolute top-[50%] left-[50%] w-[1000px] group h-auto translate-x-[-50%] translate-y-[-50%]"
-                        >
-                          <img
-                            src="assets/ena.jpg"
-                            class="group-hover:scale-110 transition-all duration-300"
-                          />
-                        </span>
-                      </div>
-                      <div
-                        class="gallery-card opacity-0 bg-slate-800 w-full h-full relative overflow-hidden rounded-[1rem] card-shadow"
-                      >
-                        <span
-                          class="absolute top-[50%] left-[50%] w-[1000px] group h-auto translate-x-[-50%] translate-y-[-50%]"
-                        >
-                          <img
-                            src="assets/ena.jpg"
-                            class="group-hover:scale-110 transition-all duration-300"
-                          />
-                        </span>
-                      </div>
-                    </span>
-                  </span>
-                </div>
-              </div>
-              <section class="flex justify-center items-center w-full h-auto">
-                <span class="text-center">
-                  <p class="font-mono font-bold text-slate-800 text-lg">
-                    Get to know the World-famous Harajuku Street Fashion
-                  </p>
-                  <p class="font-mono font-bold text-slate-500 text-md">
-                    The area is well-known to just about everyone-particulary
-                    fashion conscious teenagers and young adults
-                  </p>
-                </span>
-              </section>
-            </div>
-            <div class="w-full h-auto flex flex-col gap-5">
-              <div class="mb-10 w-full h-auto flex flex-col gap-12">
-                <div class="w-full h-auto flex flex-col gap-12">
-                  <span class="flex flex-col gap-1"
-                    ><p
-                      class="gallery-title opacity-0 font-mono font-thin text-slate-800 text-3xl tracking-widest"
-                    >
-                      Roppongi Collection
-                    </p>
-                    <p
-                      class="gallery-title opacity-0 font-mono font-thin text-slate-800 text-lg tracking-widest"
-                    >
-                      japanese characters here
-                    </p>
-                  </span>
-                  <div class="flex justify-center">
-                    <span class="flex justify-center w-[90%] h-[30rem]">
-                      <span
-                        class="gallery-card-container flex gap-[5%] w-full h-full justify-center"
-                      >
-                        <div
-                          class="gallery-card opacity-0 bg-slate-800 w-full h-full relative overflow-hidden rounded-[1rem] card-shadow"
-                        >
-                          <span
-                            class="absolute top-[50%] left-[50%] w-[1000px] group h-auto translate-x-[-50%] translate-y-[-50%]"
-                          >
-                            <img
-                              src="assets/ena.jpg"
-                              class="group-hover:scale-110 transition-all duration-300"
-                            />
-                          </span>
-                        </div>
-                        <div
-                          class="gallery-card opacity-0 bg-slate-800 w-full h-full relative overflow-hidden rounded-[1rem] card-shadow"
-                        >
-                          <span
-                            class="absolute top-[50%] left-[50%] w-[1000px] group h-auto translate-x-[-50%] translate-y-[-50%]"
-                          >
-                            <img
-                              src="assets/ena.jpg"
-                              class="group-hover:scale-110 transition-all duration-300"
-                            />
-                          </span>
-                        </div>
-                        <div
-                          class="gallery-card opacity-0 bg-slate-800 w-full h-full relative overflow-hidden rounded-[1rem] card-shadow"
-                        >
-                          <span
-                            class="absolute top-[50%] left-[50%] w-[1000px] group h-auto translate-x-[-50%] translate-y-[-50%]"
-                          >
-                            <img
-                              src="assets/ena.jpg"
-                              class="group-hover:scale-110 transition-all duration-300"
-                            />
-                          </span>
-                        </div>
-                        <div
-                          class="gallery-card opacity-0 bg-slate-800 w-full h-full relative overflow-hidden rounded-[1rem] card-shadow"
-                        >
-                          <span
-                            class="absolute top-[50%] left-[50%] w-[1000px] group h-auto translate-x-[-50%] translate-y-[-50%]"
-                          >
-                            <img
-                              src="assets/ena.jpg"
-                              class="group-hover:scale-110 transition-all duration-300"
-                            />
-                          </span>
-                        </div>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-                <section class="flex justify-center items-center w-full h-auto">
-                  <span class="text-center">
-                    <p class="font-mono font-bold text-slate-800 text-lg">
-                      The Wild side of Roppongi comes alive
-                    </p>
-                    <p class="font-mono font-bold text-slate-500 text-md">
-                      Right in the heart of things, old or young people style it
-                      up in Roppongi
-                    </p>
-                  </span>
-                </section>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        id="about"
-        class="flex justify-center w-full h-auto gallery bg-slate-100"
-      >
-        <div class="w-[50%] flex flex-col items-center gap-10 py-10">
-          <div class="flex flex-col items-center gap-10 py-20">
-            <h1 class="pb-10 font-mono font-bold text-slate-800 text-2xl">
-              About Us
-            </h1>
-            <p class="font-mono font-thin text-slate-800 text-lg text-center">
-              MIDORI began as an experimental fashion line catalog-innovative
-              pop art-inspired designs capturing a distinct Tokyo aesthetic. The
-              iconic trademarked motif in particular received media coverage
-              around the world. With apparel created as a canvas to complete the
-              story. MIDORI evolved into designing unisex collections
-            </p>
-            <p class="font-mono font-thin text-slate-800 text-lg text-center">
-              Jay Yuu Nanasawa is Japanese-Filipino Graphic designer and
-              professional Photographer, same as Lancelot Paclibar who is also a
-              Filipino Fashion designer and Animator. They studied graphic
-              design at Mapua Malayan Colleges Mindanao and graduated in 2023.
-              They are well-known as the creative directors of their brand
-              MIDORI and known for their forte in Davao City. Jay and Lancelot
-              are currently based in Tokyo, Japan.
-            </p>
-          </div>
-          <div class="flex flex-col items-center gap-10">
-            <h1 class="pb-10 font-mono font-bold text-slate-800 text-2xl">
-              Founders
-            </h1>
-            <span class="flex gap-5"
-              ><div class="flex justify-center flex-col items-center gap-5">
-                <div
-                  class="bg-slate-800 w-72 h-72 relative overflow-hidden rounded-[50%]"
-                >
-                  <span
-                    class="absolute top-[50%] left-[50%] w-[200px] h-auto translate-x-[-50%] translate-y-[-50%]"
-                  >
-                    <img src="assets/ena.jpg" />
-                  </span>
-                </div>
-                <p class="font-mono font-thin text-slate-800 text-md">
-                  Jay Yuu Nanasawa
-                </p>
-              </div>
-              <div class="flex justify-center flex-col items-center gap-5">
-                <div
-                  class="bg-slate-800 w-72 h-72 relative overflow-hidden rounded-[50%]"
-                >
-                  <span
-                    class="absolute top-[50%] left-[50%] w-[200px] h-auto translate-x-[-50%] translate-y-[-50%]"
-                  >
-                    <img src="assets/ena.jpg" />
-                  </span>
-                </div>
-                <p class="font-mono font-thin text-slate-800 text-md">
-                  Lancelot Paclibar
-                </p>
-              </div>
-            </span>
-          </div>
-        </div>
-      </section>
 
-      <footer class="bg-slate-300 flex justify-center items-center">
-        <p class="font-mono font-bold text-slate-800 text-md p-10">
-          MIDORI 2022
-        </p>
+      <footer class="bg-[#f0f0f0] flex justify-center items-center">
+        <p class="font-t-semibold text-md p-10">MIDORI 2022</p>
       </footer>
     </main>
 
