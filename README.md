@@ -2,6 +2,19 @@
 
 a project for practicing tailwindcss and vanilla js
 
+#### Home
+
+![image](./images/home.png)
+
+#### Gallery
+
+![image](./images/gallery.png)
+![image](./images/gallery2.png)
+
+#### Products
+
+![image](./images/products.png)
+
 ## How to Edit
 
 1. install `node.js`
