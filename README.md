@@ -20,3 +20,6 @@ a project for practicing tailwindcss and vanilla js
 1. install `node.js`
 2. run `yarn` to install dependencies
 3. run `yarn tailwindcss -i ./style/dev.css -o ./style/styles.css --watch` to start tailwindcss watcher
+
+## Credits
+Jay Yuu Nanasawa and Lancelot Paclibar for the design 
