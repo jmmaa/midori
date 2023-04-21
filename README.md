@@ -22,4 +22,4 @@ a project for practicing tailwindcss and vanilla js
 3. run `yarn tailwindcss -i ./style/dev.css -o ./style/styles.css --watch` to start tailwindcss watcher
 
 ## Credits
-Jay Yuu Nanasawa and Lancelot Paclibar for the design 
+[Jay Yuu Nanasawa](https://www.behance.net/jayyuunanasawa?tracking_source=search_users|Jay%20yuu%20nanasawa) and [Lancelot Paclibar](https://www.behance.net/shiroinora12?tracking_source=search_users|shiroi%20nora) for the UI/UX design 
